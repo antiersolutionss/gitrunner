@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v2 
       - name: Build & Deploy
         env:
-            PRIVATE_KEY: ${{ var.SSH_PRIVATE_KEY }}
-            HOSTNAME: ${{ var.SSH_HOST }}
-            USER_NAME: ${{ var.USER_NAME }}
+            PRIVATE_KEY: ${{ vars.SSH_PRIVATE_KEY }}
+            HOSTNAME: ${{ vars.SSH_HOST }}
+            USER_NAME: ${{ vars.USER_NAME }}
       
         run: |
           echo "start code"
